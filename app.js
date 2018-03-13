@@ -57,6 +57,14 @@ function validateAttr(payload) {
   })
 }
 
+function errorHandling(err) {
+  if (err.type == "validate") {
+    return {"message": err.message, type: "invalid validation"}
+  } else if (err.type == "parse") {
+    return {"message": err.message, type: "invalid parsing"}
+  }
+}
+
 var seoRules = {}
 
 seoRules.validate = (html,userRules) => {
