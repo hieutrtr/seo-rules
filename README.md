@@ -50,7 +50,7 @@ sr.seoRules(html,userRules)
 * immutable.js : For keep applying one rule on multiple tags or elements.
 * cheerio : For parsing HTML to object.
 
-## Configuration
+## Predefined rules (references rule guide below)
 ```javascript
 var preRules = {
   img: {
